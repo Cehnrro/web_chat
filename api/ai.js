@@ -1,6 +1,7 @@
 export default async function handler(req, res) {
   // 设置 CORS 头 - 允许你的网站域名
-  res.setHeader('Access-Control-Allow-Origin', 'https://web-4hf0jnmgt-cehns-projects.vercel.app');
+// 允许所有 Vercel 域名访问
+  res.setHeader('Access-Control-Allow-Origin', 'https://*.vercel.app');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
   
